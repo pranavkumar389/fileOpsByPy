@@ -7,5 +7,5 @@ fileSize = 1024*1024 # 1MB
 
 for x in range(noOfFilesToCreate):
   fileName = str(datetime.timestamp(datetime.utcnow())) + "_" + str(x)
-  with open(fileName, 'wb') as myFile:
+  with open(fileName, 'wb') as myFile: #wb for binary write
     myFile.write(os.urandom(fileSize))
